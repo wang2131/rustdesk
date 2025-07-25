@@ -1389,7 +1389,7 @@ pub async fn secure_tcp(conn: &mut Stream, key: &str) -> ResultType<()> {
     // This doesn't affect the end-to-end encryption between clients,
     // it only avoids redundant encryption between client and server.
     //此处直接返回
-    Ok(())
+    return Ok(())
 }
 
 #[inline]
